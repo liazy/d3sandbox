@@ -1,0 +1,14 @@
+.databar {
+	box-sizing: border-box;
+	
+	display: inline-block;
+	width: auto;
+	height: 10px;
+	
+	border: 1px solid white;
+	background-color: black;
+}
+
+.databar-error {	
+	background-color: red;
+}
