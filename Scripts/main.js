@@ -1,5 +1,4 @@
 var dataset = [ 5, 10, 15, 20, 25 ];
-var total = 75;
 
 var context = d3.select("#bars")
 	.selectAll("div")
@@ -18,6 +17,6 @@ var context = d3.select("#bars")
 		
 		return output;
 	})
-	.style("width", function(d) {
-		return (d*100)/75 + '%';
+	.style("height", function(d) {
+		return d + 'px';
 	});
