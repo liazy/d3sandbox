@@ -4,8 +4,13 @@
 	display: inline-block;
 	width: 10px;
 	
-	border: 1px solid white;
+	border: 10px solid white;
+	border-top: none;
+	border-bottom: none;
 	background-color: black;
+	
+	position: absolute;
+	bottom: 0;
 }
 
 .databar-error {	
