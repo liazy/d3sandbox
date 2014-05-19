@@ -14,11 +14,7 @@ $(document).ready(function() {
 			
 		 // add things that aren't there
 		 context.enter()	
-			.append("div")
-			// set initial height for transitioning...
-			.style("height", function(d) {
-				return '100%';
-			})
+			.append("div")			
 			// set default class...
 			.attr("class", function(d) {
 				return 'databar';
@@ -38,7 +34,6 @@ $(document).ready(function() {
 				
 				return output;
 			})
-			.transition()
 			.style("width", function(d) {
 				return seriesWidth + '%';
 			})
