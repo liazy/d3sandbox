@@ -4,9 +4,7 @@
 	display: inline-block;
 	width: 10px;
 	
-	border: 10px solid white;
-	border-top: none;
-	border-bottom: none;
+	border: none;
 	background-color: black;
 	
 	position: absolute;
