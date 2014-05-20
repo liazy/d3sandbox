@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<!-- Must load shim before the DOM is parsed -->
+        <!--[if lt IE 9]>
+			<script type="text/javascript" src="Scripts/D3/aight.min.js"></script>
+		<![endif]-->
+		
         <title>D3 Test</title>
 		<link rel="stylesheet" type="text/css" href="Styles/Modules/DataBar.css">
 		<link rel="stylesheet" type="text/css" href="Styles/Modules/Grid.css">
@@ -20,8 +26,8 @@
 		
 		
 		<!-- JavaScript blocks render as it is parsed so always display last -->
+		<script type="text/javascript" src="Scripts/jQuery/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="Scripts/D3/d3.v3.js"></script>
-		<script type="text/javascript" src="Scripts/jQuery/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="Scripts/main.js"></script>
+		<script type="text/javascript" src="Scripts/main.js"></script>
     </body>
 </html>
