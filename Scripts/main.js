@@ -78,6 +78,8 @@ $(document).ready(function() {
 	bind();
 	
 	$('[data-action="move"]').on('click', function() {
+		
+		// swapping the index makes the bars move sideways as we use the index to render position...
 		for (var i = 2; i < dataset.length; i+=2) {
 			var swap = dataset[i].index;
 			dataset[i].index = dataset[i-2].index;
@@ -88,6 +90,7 @@ $(document).ready(function() {
 	});
 	
 	$('[data-action="swap"]').on('click', function() {
+		// swapping the values makes the bar height and style change but not its position...
 		for (var i = 2; i < dataset.length; i+=2) {
 			var swap = dataset[i].value;
 			dataset[i].value = dataset[i-2].value;
