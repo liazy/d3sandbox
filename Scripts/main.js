@@ -32,12 +32,7 @@ $(document).ready(function() {
 		// remove things that shouldn't be there
 		context.exit()	
 			   .remove();
-		
-		// get a new context to separate enter from update animations...
-		var context = d3.select("#bars")
-						.selectAll("div")
-						.data(dataset);
-		
+					
 		// update new and old...
 		context.attr("class", function(d) {
 				var output = 'databar';
@@ -61,7 +56,7 @@ $(document).ready(function() {
 				return (d.value*100)/max + '%';
 			})
 			.text(function(d) {
-				return d.id;
+				return d.value;
 			});
 	}
 
