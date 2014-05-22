@@ -7,6 +7,10 @@
 	border: none;
 	background-color: black;
 	
+	color: white;
+	text-align: center;
+	padding: 5px;
+	
 	position: absolute;
 	bottom: 0;
 	
